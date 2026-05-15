@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 import { useAppStore } from "@/store/appStore";
 
 const slides = [
-  { id: 0, title: "Delivery In\nJHB South", subtitle: "Get premium cannabis delivered to Johannesburg South in under 45 minutes. Track your order in real-time.", bg: "/images/splash-lightning-fast.png", accent: "#22C55E" },
+  { id: 0, title: "Delivery In\nJHB South", subtitle: "Get premium cannabis delivered to Johannesburg South in under 45 minutes. Track your order in real-time.", bg: "/images/banner-free-delivery.png", accent: "#22C55E" },
   { id: 1, title: "Premium\nProducts", subtitle: "Curated selection of lab-tested flower, edibles, concentrates, and more from top-tier producers.", bg: "/images/splash-premium-products.png", accent: "#A855F7" },
   { id: 2, title: "100% Secure\nOrdering", subtitle: "Discreet packaging, encrypted payments, and age-verified delivery by our trusted team.", bg: "/images/splash-secure.png", accent: "#7EB8C9" },
 ];
