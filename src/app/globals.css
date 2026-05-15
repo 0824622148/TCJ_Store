@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 60% 4%;
+    --foreground: 240 20% 96%;
+    --card: 265 60% 12%;
+    --card-foreground: 240 20% 96%;
+    --popover: 265 60% 8%;
+    --popover-foreground: 240 20% 96%;
+    --primary: 270 60% 14%;
+    --primary-foreground: 240 20% 96%;
+    --secondary: 280 50% 40%;
+    --secondary-foreground: 240 20% 96%;
+    --muted: 265 40% 12%;
+    --muted-foreground: 270 20% 60%;
+    --accent: 142 71% 45%;
+    --accent-foreground: 265 60% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 240 20% 96%;
+    --border: 265 40% 18%;
+    --input: 265 40% 12%;
+    --ring: 270 60% 35%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-matte text-soft;
+    font-family: 'Inter', 'SF Pro Display', 'Poppins', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbar on phone frame inner content */
+  .phone-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .phone-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .glass-elevated {
+    @apply bg-white/8 backdrop-blur-lg border border-white/15;
+  }
+
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-md border border-white/5;
+  }
+
+  .text-gradient-green {
+    background: linear-gradient(135deg, #22C55E, #4ADE80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #A855F7, #C084FC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-white\/8 {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .border-white\/15 {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}

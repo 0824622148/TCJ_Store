@@ -1,0 +1,61 @@
+import { User } from "@/types/user";
+
+export const mockUser: User = {
+  id: "usr-001",
+  name: "Alex Rivera",
+  phone: "+1 (555) 234-5678",
+  email: "alex.rivera@email.com",
+  avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+  loyaltyPoints: 1240,
+  loyaltyTier: "Gold",
+  pointsToNextTier: 760,
+  nextTier: "Platinum",
+  memberSince: "January 2024",
+  totalOrders: 34,
+  totalSpent: 1847,
+  savedAddresses: [
+    {
+      id: "addr-001",
+      label: "Home",
+      street: "12 Cloud Street",
+      city: "Johannesburg South",
+      state: "GP",
+      zip: "2091",
+      isDefault: true,
+    },
+    {
+      id: "addr-002",
+      label: "Work",
+      street: "45 Soweto Hwy",
+      city: "Johannesburg South",
+      state: "GP",
+      zip: "2098",
+      isDefault: false,
+    },
+    {
+      id: "addr-003",
+      label: "Other",
+      street: "8 Nancefield Rd",
+      city: "Johannesburg South",
+      state: "GP",
+      zip: "2094",
+      isDefault: false,
+    },
+  ],
+  savedPaymentMethods: [
+    {
+      id: "pm-001",
+      type: "card",
+      label: "Visa ending in 4242",
+      last4: "4242",
+      brand: "visa",
+      isDefault: true,
+    },
+    {
+      id: "pm-002",
+      type: "apple-pay",
+      label: "Apple Pay",
+      isDefault: false,
+    },
+  ],
+};
