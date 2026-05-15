@@ -21,7 +21,7 @@ export default function BottomNav() {
   const itemCount = useCartStore((s) => s.itemCount());
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-40">
+    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
       {/* Blur backdrop */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#0A0118]/95 to-transparent backdrop-blur-xl border-t border-white/5" />
 

@@ -28,11 +28,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         </div>
 
         {/* Mobile bottom nav */}
-        {showNav && (
-          <div className="md:hidden">
-            <BottomNav />
-          </div>
-        )}
+        {showNav && <BottomNav />}
       </div>
     </div>
   );
