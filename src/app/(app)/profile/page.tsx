@@ -42,7 +42,7 @@ export default function ProfileScreen() {
   ];
 
   return (
-    <div className="w-full h-full overflow-y-auto phone-scroll bg-app-gradient pb-6">
+    <div className="w-full h-full overflow-y-auto phone-scroll bg-app-gradient pb-28 md:pb-6">
       {/* Header */}
       <div className="px-4 pt-4 pb-2 flex items-center justify-between">
         <h1 className="text-soft text-xl font-bold">Profile</h1>

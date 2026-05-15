@@ -314,7 +314,7 @@ export default function ProductDetailScreen() {
             </div>
           )}
 
-          <div className="h-32" />
+          <div className="h-44" />
         </div>
       </div>
 
@@ -323,7 +323,7 @@ export default function ProductDetailScreen() {
         variants={slideUp}
         initial="initial"
         animate="animate"
-        className="absolute bottom-0 left-0 right-0 px-4 pb-6 pt-4 bg-gradient-to-t from-[#0A0118] to-transparent"
+        className="absolute bottom-0 left-0 right-0 px-4 pb-24 md:pb-6 pt-4 bg-gradient-to-t from-[#0A0118] to-transparent"
       >
         <div className="flex items-center gap-3">
           <QuantityControl value={qty} onChange={setQty} className="flex-shrink-0" />
